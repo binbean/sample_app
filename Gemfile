@@ -33,7 +33,7 @@ group :doc do
 end
 
 # Add gems
-group :developement, :test do
+group :development, :test do
   gem 'rspec-rails', '2.13.1'
 end
 

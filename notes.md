@@ -7,6 +7,9 @@ bundle install --without production
 rails generate rspec:install
 *suppress the genearation of the default RSpec tests
 generate controller StaticPages home help --no-test-framework
+*Generate an integration test(request spec) for our static pages
+$ rails generate integration_test static_pages
+
 ## Undoing things
 *Controller
 
