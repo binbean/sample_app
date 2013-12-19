@@ -1,5 +1,5 @@
-source 'https://rubygems.org'
-
+#source 'https://rubygems.org'
+source 'http://ruby.taobao.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
@@ -41,6 +41,8 @@ group :test do
   gem 'selenium-webdriver', '2.35.1'
   gem 'capybara', '2.1.0'
 end
+
+gem 'bootstrap-sass', '2.3.2.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
