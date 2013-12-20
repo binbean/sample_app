@@ -26,5 +26,6 @@ module SampleApp
     # config.i18n.default_locale = :de
     # Add
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.git)
+    config.i18n.default_locale = true
   end
 end
