@@ -10,6 +10,12 @@ class User < ActiveRecord::Base
   validates :password, length: {minimum: 6 }
   has_secure_password
 
+  has_many :microposts, dependent: :destroy
+
+  def feed
+    Micropost.where("user_id = ?", id)
+  end
+
   def User.new_remember_token
     SecureRandom.urlsafe_base64
   end
